@@ -10,7 +10,7 @@ namespace DataAccess.Models
     {
         public int ViolationId {get; set;}
         public string PolicyNumber { get; set; }
-        public string DriverNumber {get; set; }
+        public int DriverNumber {get; set; }
         public string ViolationName { get; set; }
         public string Points { get; set; }
     }

@@ -7,10 +7,10 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 
 
-namespace ViolationsUnitTests
+namespace DataAccessUnitTests
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTests
     {
        
 
@@ -19,10 +19,18 @@ namespace ViolationsUnitTests
         {
             using (var db = new ViolationsContext() )
            { 
-                //db.Violations.Add(new Violation{DriverNumber = 1, Points="0", PolicyNumber= "123456789", ViolationName = "Failure to Yield" });
-                //db.SaveChanges();
                  var violation = db.Violations.FirstOrDefault();
                  Assert.IsTrue(violation.ViolationId == 1);
+            }
+        }
+
+        [TestMethod]
+        public void CanRetrieveDrivers()
+        {
+            using (var db = new ViolationsContext())
+            {
+                var driver = db.Drivers.FirstOrDefault();
+                Assert.IsTrue(driver.DriverId == 1);
             }
         }
               

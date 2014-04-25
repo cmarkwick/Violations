@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{72C78E92-670D-4466-B232-58DE2C2B3FE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViolationsUnitTests", "ViolationsUnitTests\ViolationsUnitTests.csproj", "{911AC3C0-3B44-4791-9CFE-2AC9DAD2FDFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessUnitTests", "ViolationsUnitTests\DataAccessUnitTests.csproj", "{911AC3C0-3B44-4791-9CFE-2AC9DAD2FDFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
